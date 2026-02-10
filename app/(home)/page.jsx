@@ -13,11 +13,11 @@ export default function Home() {
       />
       <h1>Welcome to our Dev Space!</h1>
       <ul>
-        <li>Action items:</li>
-        <li>Navigate to <span>@/app/_components/navbar/Navbar.jsx</span></li>
-        <li>Create your <span>Navbar</span> component and add a <span>dropdown</span> feature to it</li>
-        <li>You are required to use <span>useState</span> and the <span>map()</span> method</li>
-        <li>Don&apos;t worry too much about smooth animations. Just try get it working :-)</li>
+        <li>Take Home:</li>
+        <li>Navigate to <span>@/app/(members)/your_name/</span></li>
+        <li>Start working on your personal page!</li>
+        <li>You are required to use <span>Flexbox</span> components.</li>
+        <li>Don&apos;t worry too much about a beautiful page. Just try get it working :-)</li>
       </ul>
     </div>
   );

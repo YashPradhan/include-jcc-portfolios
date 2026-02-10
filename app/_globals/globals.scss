@@ -1,0 +1,34 @@
+:root {
+    --include-purple: #3C257E;
+    --include-purple-light: #5a4b85;
+    --accent-color: #97C3BD;
+    
+    --background-light: #F9F9F9;
+    --background-dark: #969696;
+    --foreground-light: #FFF;
+  
+    --text-dark: #000;
+    --text-midtone: #414141;
+    --text-light: #FFF;
+  
+    --edge-spacing: 200px;
+    --folder-tab-width: 1076px;
+  
+    --include-gradient: linear-gradient(90deg, #332950, #3C257E, #322D41);
+
+    // colors for the ui exercise
+    --background-dark: #976257;
+    --background-light: #eed1cb;
+    --background-overlay: #00000090;
+  }
+  
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }

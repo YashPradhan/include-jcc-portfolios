@@ -7,6 +7,15 @@
   padding: 2rem;
 }
 
+.aboutMe_title {
+  margin-top: 2rem;
+  font-size: 1.25rem;
+  max-width: 600px;
+  flex-direction: row;
+  text-align: center;
+  
+}
+
 .title {
   margin-bottom: 1rem;
 }
@@ -14,4 +23,11 @@
 .description {
   font-size: 1.25rem;
   color: #666;
+}
+
+.profileImage {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 2rem;
 }

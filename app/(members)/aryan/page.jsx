@@ -14,6 +14,12 @@ export default function AryanPage() {
          applied AI, and always focusing on writing efficient code. Beyond technical skills, I’m passionate about using 
          technology as a tool for research, problem-solving, and social good. I’m currently seeking opportunities in research and collaborative 
          projects where I can deepen my understanding and create meaningful impact.</p>
+    <p className={styles.hobbies}>
+      <strong>Hobbies</strong>
+      <br></br>
+      Outside tech and the classroom, I love playing tennis and soccer. I am also a big foodie, so if you know any good spots in davis then let me know I'll try for sure.
+
+    </p>
     <div className={styles.skills}>
     <h1 className={styles.skills_header}>Skills</h1>
     <ul>

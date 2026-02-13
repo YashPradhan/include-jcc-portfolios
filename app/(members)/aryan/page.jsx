@@ -17,6 +17,7 @@ export default function AryanPage() {
     <p className={styles.hobbies}>
       <strong>Hobbies</strong>
       <br></br>
+      <br></br>
       Outside tech and the classroom, I love playing tennis and soccer. I am also a big foodie, so if you know any good spots in davis then let me know I'll try for sure.
 
     </p>

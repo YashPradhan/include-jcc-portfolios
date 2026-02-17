@@ -8,8 +8,20 @@ export default function TonyPage() {
         <p className={styles.description}>things are hidden in plain sight...</p>
       </div>
       <div className={`${styles.box} ${styles.intro}`}>
-        <p className={styles.boxInfo}>University of California, Davis</p>
+        <p className={styles.boxInfo}>UC Davis</p>
         <p className={styles.boxInfo}>B.A. Design</p>
+        <p className={styles.boxInfo}>Art Minor</p>
+      </div>
+      <div className={`${styles.box} ${styles.interests}`}>
+        <p className={styles.boxInfo}>Interests:</p>
+        <p className={styles.boxInfo}>concept art, photography, game development</p>
+      </div>
+      <div className={`${styles.box} ${styles.work}`}>
+        <p className={styles.boxInfo}>
+          <a href="https://github.com/tjlin653"></a>
+        </p>
+        <p className={styles.boxInfo}><em>Death to Dragons</em>(turn-based card game)</p>
+        <p className={styles.boxInfo}><em>Website Master Controls</em>(accessibility-focused chrome extension)</p>
       </div>
     </div>
   );

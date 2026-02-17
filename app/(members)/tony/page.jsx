@@ -18,10 +18,13 @@ export default function TonyPage() {
       </div>
       <div className={`${styles.box} ${styles.work}`}>
         <p className={styles.boxInfo}>
-          <a href="https://github.com/tjlin653"></a>
+          <a className={styles.link} href="https://github.com/tjlin653">github.com/tjlin653</a>
         </p>
-        <p className={styles.boxInfo}><em>Death to Dragons</em>(turn-based card game)</p>
-        <p className={styles.boxInfo}><em>Website Master Controls</em>(accessibility-focused chrome extension)</p>
+        <p className={styles.boxInfo}><em>Death to Dragons</em> (turn-based card game)</p>
+        <p className={styles.boxInfo}><em>Website Master Controls</em> (accessibility-focused chrome extension)</p>
+      </div>
+      <div className={`${styles.box} ${styles.joke}`}>
+        <p className={styles.boxInfo}>"Always remember that you are unique. Just like everyone else."</p>
       </div>
     </div>
   );

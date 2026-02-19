@@ -35,8 +35,7 @@
 
 .box {
   background-color: rgb(249, 249, 249, 0.5);
-  transition: box-shadow 0.2s ease-in-out;
-  border-radius: 5%;
+  transition: box-shadow 0.2s ease;
   display: flex;
   flex-direction: column;
   justify-content: center;

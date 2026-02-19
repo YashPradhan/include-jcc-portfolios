@@ -25,11 +25,11 @@ export default function TonyPage() {
           </p>
         </div>
         <div className={`${styles.box} ${styles.deathToDragons}`}>
-          <p className={styles.boxInfo}><em>Death to Dragons</em></p>
+          <p className={styles.boxInfo}>Project: <em>Death to Dragons</em></p>
           <p className={styles.boxInfo}>(turn-based card game)</p>
         </div>
         <div className={`${styles.box} ${styles.websiteControls}`}>
-          <p className={styles.boxInfo}><em>Website Master Controls</em></p>
+          <p className={styles.boxInfo}>Project: <em>Website Master Controls</em></p>
           <p className={styles.boxInfo}>(accessibility-focused chrome extension)</p>
         </div>
       </div>

@@ -7,10 +7,10 @@ export default function TonyPage() {
         <h1 className={styles.title}>Tony's Portfolio</h1>
         <p className={styles.description}>things are hidden in plain sight...</p>
       </div>
-      <div className={`${styles.box} ${styles.intro}`}>
+      <div className={styles.gridContainer}>
+        <div className={`${styles.box} ${styles.intro}`}>
         <p className={styles.boxInfo}>UC Davis</p>
         <p className={styles.boxInfo}>B.A. Design</p>
-        <p className={styles.boxInfo}>Art Minor</p>
       </div>
       <div className={`${styles.box} ${styles.interests}`}>
         <p className={styles.boxInfo}>Interests:</p>
@@ -25,6 +25,7 @@ export default function TonyPage() {
       </div>
       <div className={`${styles.box} ${styles.joke}`}>
         <p className={styles.boxInfo}>"Always remember that you are unique. Just like everyone else."</p>
+      </div>
       </div>
     </div>
   );

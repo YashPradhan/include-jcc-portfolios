@@ -5,13 +5,48 @@
   align-items: center;
   justify-content: center;
   padding: 2rem;
+  background: var(--include-gradient);
+  color: var(--text-light);;
 }
 
 .title {
   margin-bottom: 1rem;
+  font-size: 2rem;
 }
 
 .description {
   font-size: 1.25rem;
-  color: #666;
+  color: var(--text-light);
+  margin-bottom: 1rem;
+}
+
+.generic {
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--text-light);
+  margin-bottom: 1rem;
+}
+.collection {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: stretch;
+  border: 2px groove;
+  font-size: 1rem;
+  row-gap: 5%;
+}
+
+.descriptor {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  border: 2px groove;
+  padding: 4rem;
+
+
+
 }

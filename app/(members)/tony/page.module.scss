@@ -1,17 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+
 .container {
   min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  color: #202020;
+  font-family: Lexend;
+}
+
+.header {
+  position: fixed;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  padding: 2rem;
+  align-items: center;
+  z-index: 2;
 }
 
 .title {
-  margin-bottom: 1rem;
+  font-size: 5rem;
+  margin-bottom: 2rem;
 }
 
 .description {
   font-size: 1.25rem;
   color: #666;
+}
+
+.box {
+  background-color: rgb(249, 249, 249, 0.5);
+  transition: box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxInfo {
+  font-size: 1rem;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.box:hover {
+  box-shadow: 
+    inset 6px 6px 6px rgba(0, 0, 0, 0.15),
+    inset -6px -6px 6px rgba(241, 241, 241, 0.8);
+}
+
+.box:hover .boxInfo {
+  opacity: 1;
+}
+
+.link {
+  text-decoration: underline;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-rows: auto 0px auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0;
+  margin-top: 70px;
+}
+
+.intro, .interests, .work, .joke, .deathToDragons, .websiteControls {
+  width: 30vw;
+  height: 20vh;
 }

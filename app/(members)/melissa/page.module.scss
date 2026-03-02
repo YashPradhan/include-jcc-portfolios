@@ -1,18 +1,63 @@
 .container {
   min-height: 100vh;
+  padding: 3rem 2.5rem;
+
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  background: (
+    #ff9a9e,
+  );
 }
 
 .title {
   font-size: 3rem;
-  margin-bottom: 1rem;
+  font-weight: 800;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 0.5rem;
+
+  color: #3a0ca3;
 }
 
 .description {
   font-size: 1.25rem;
-  color: #666;
+  text-align: center;
+  width: 100%;
+
+  color: #5e3a8c;
+}
+.content {
+  width: 100%;
+  max-width: 800px;
+}
+
+.ProjectCard {
+  flex :1;
+  min-width:260px;
+  border:1px solid #ddd;
+  border-radius:12px;
+  padding:1rem;
+}
+
+.sectionHeader {
+  font-style: italic;
+  font-weight: 700;
+  margin-top: 1.2rem;
+  margin-bottom: 0.5rem;
+
+  color: #821c5b;   // deep sunset red
+}
+
+.cardTitle {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #9e121b;   // deep plum sunset
+}
+
+.bodyText {
+  color: #2b2d42;   // modern charcoal
+  font-size: 1rem;
 }

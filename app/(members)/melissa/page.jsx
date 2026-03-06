@@ -1,6 +1,14 @@
 import styles from "./page.module.scss";
+import Card from "./EventCard";
 
 export default function MelissaPage() {
+  const projects = [
+  {title: "Traffic Light Controller", description: "Built a traffic light system using button interruptions, timing logic, and LED state control in C."},
+  {title: "Earthquake Risk ML Model", description: "Developed a machine learning pipeline to predict earthquake magnitude categories using python"},
+  {title: "MATLAB Image Encoding Application", description: "Built a MATLAB application that embeds hidden images inside another image using RGB channel manipulation and difference embedding techniques."}
+]
+
+
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>Melissa's Portfolio</h1>
@@ -16,19 +24,9 @@ export default function MelissaPage() {
   <h2 className={styles.sectionHeader}>Projects</h2>
 
   <div className={styles.ProjectList}>
-    <div className={styles.ProjectCard}>
-      <h3 className={styles.cardTitle}>Traffic Light Controller</h3>
-      <p className={styles.bodyText}>
-        Built a traffic light system using button interruptions, timing logic, and LED state control in C.
-      </p>
-    </div>
-
-    <div className={styles.ProjectCard}>
-      <h3 className={styles.cardTitle}>Earthquake Risk ML Model</h3>
-      <p className={styles.bodyText}>
-        Developed a machine learning pipeline to predict earthquake magnitude categories using python.
-      </p>
-    </div>
+    {projects.map( project => (<Card 
+    title={project.title}
+    description={project.description}/>))}
   </div>
 </section>
 

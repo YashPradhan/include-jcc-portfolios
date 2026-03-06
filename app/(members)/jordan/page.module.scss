@@ -195,3 +195,36 @@
   transform: translateY(-10px);
   box-shadow: 0 12px 30px rgba(84, 37, 76, 0.4);
 }
+
+.navBar {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.navButton {
+  padding: 8px 18px;
+  border-radius: 50px;
+  border: 2px solid #bd9dc6;
+  background: transparent;
+  color: #bd9dc6;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.25s ease;
+}
+
+.navButton:hover {
+  background-color: #f4e4f4;
+  transform: translateY(-3px);
+}
+
+.activeNavButton {
+  padding: 8px 18px;
+  border-radius: 50px;
+  border: 2px solid #bd9dc6;
+  background-color: #bd9dc6;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(132, 78, 131, 0.25);
+}

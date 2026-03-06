@@ -1,6 +1,49 @@
+"use client";
+
 import styles from "./page.module.scss";
+import { useState } from "react";
 
 export default function JordanPage() {
+  const hobbies = [
+    {
+      title: "Crochet",
+      description: "This is one of my favorite creations that I gifted to a friend! The character and outfit are crocheted, and I made her a felt crown!",
+      image: "hobby1.png"
+    },
+    {
+      title: "Crafting and Legos",
+      description: "I love building those little book nooks during breaks. I have built around 7 of these already! Crafting and a good movie is my favorite!",
+      image: "hobby2.png"
+    },
+    {
+      title: "Concerts",
+      description: "I have attended 14 concerts, and more upcoming this year! I am most excited for BTS and Bruno Mars coming up this year.",
+      image: "hobby3.png"
+    }
+  ];
+
+  const videoGames = [
+    {
+      title: "Breath of the Wild",
+      image: "videogame1.png"
+    },
+    {
+      title: "Nier Automata",
+      image: "videogame2.png"
+    },
+    {
+      title: "Resident Evil",
+      image: "videogame3.png"
+    }
+  ];  
+
+  const navBar = [
+    { label: "Hobbies", key: "hobbies" },
+    { label: "Video Games", key: "videoGames" }
+  ];
+
+  const [activeSection, setActiveSection] = useState("hobbies");
+
   return (
     <div className={styles.container}>
       <header className={styles.header}>About Me</header>
@@ -48,46 +91,46 @@ export default function JordanPage() {
         </div>
 
         <div className={styles.hobbiesSection}>
-          <h1>My Hobbies</h1>
-          <div className={styles.hobbies}>
-            <div className={styles.hobby}>
-              <img src="hobby1.png" alt="Hobby 1" className={styles.hobbyPic} />
-              <h3>Crochet</h3>
-              <p>This is one of my favorite creations that I gifted to a friend! The character and outfit are crocheted, and I made her a felt crown!</p>
-            </div>
-
-            <div className={styles.hobby}>
-              <img src="hobby2.png" alt="Hobby 2" className={styles.hobbyPic} />
-              <h3>Crafting and Legos</h3>
-              <p>I love building those little book nooks during breaks. I have built around 7 of these already! Crafting and a good movie is my favorite!</p>
-            </div>
-
-            <div className={styles.hobby}>
-              <img src="hobby3.png" alt="Hobby 3" className={styles.hobbyPic} />
-              <h3>Concerts</h3>
-              <p>I have attended 14 concerts, and more upcoming this year! I am most excited for BTS and Bruno Mars coming up this year. </p>
-            </div>
+          <div className={styles.navBar}>
+            {navBar.map((item) => (
+              <button
+                key={item.key}
+                className={`${styles.navButton} ${activeSection === item.key ? styles.activeNavButton : ""}`}
+                onClick={() => setActiveSection(item.key)}
+              >
+                {item.label}
+              </button>
+            ))}
           </div>
-
-          <div className={styles.hobbiesSection}>
-            <h1>Favorite Video Games!</h1>
-            <div className={styles.hobbies}>
-              <div className={styles.hobby}>
-                <img src="videogame1.png" alt="Video Game 1" className={styles.hobbyPic} />
-                <h3>Breath of the Wild</h3>
+          
+          {activeSection === "hobbies" && (
+            <>
+              <h1>My Hobbies</h1>
+              <div className={styles.hobbies}>
+                {hobbies.map((hobby, index) => (
+                  <div key={index} className={styles.hobby}>
+                    <img src={hobby.image} alt={hobby.title} className={styles.hobbyPic} />
+                    <h3>{hobby.title}</h3>
+                    <p>{hobby.description}</p>
+                  </div>
+                ))}
               </div>
+            </>
+          )}
 
-              <div className={styles.hobby}>
-                <img src="videogame2.png" alt="Video Game 2" className={styles.hobbyPic} />
-                <h3>Nier Automata</h3>
-              </div>
-
-              <div className={styles.hobby}>
-                <img src="videogame3.png" alt="Video Game 3" className={styles.hobbyPic} />
-                <h3>Resident Evil</h3>
+          {activeSection === "videoGames" && (
+            <div className={styles.hobbiesSection}>
+              <h1>Favorite Video Games!</h1>
+              <div className={styles.hobbies}>
+                {videoGames.map((game, index) => (
+                  <div key={index} className={styles.hobby}>
+                    <img src={game.image} alt={game.title} className={styles.hobbyPic} />
+                    <h3>{game.title}</h3>
+                  </div>
+                ))}
               </div>
             </div>
-          </div>
+          )} 
         </div>
       </div>
     </div>

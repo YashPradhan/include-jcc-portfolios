@@ -3,50 +3,81 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 2rem;
   background: var(--include-gradient);
-  color: var(--text-light);;
+  color: var(--text-light);
 }
 
 .title {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   font-size: 2rem;
 }
 
 .description {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   color: var(--text-light);
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
-.generic {
-  min-height: 20vh;
+.cards {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.card {
+  flex: 1;
+  min-width: 220px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  color: var(--text-light);
-  margin-bottom: 1rem;
+  gap: 1rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 2px groove;
+  border-radius: 12px;
+  padding: 1.5rem;
 }
-.collection {
+
+.cardTitle {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.cardDescription {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.aboutContainer {
   display: flex;
-  flex: 1;
   flex-direction: row;
-  align-items: stretch;
+  align-items: center;
+  gap: 2rem;
   border: 2px groove;
-  font-size: 1rem;
-  row-gap: 5%;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
 }
 
-.descriptor {
-  flex: 1;
+.aboutText {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
-  justify-content: center;
-  border: 2px groove;
-  padding: 4rem;
+  gap: 0.75rem;
+}
 
 
+.aboutDescription {
+  margin: 0;
+  line-height: 1.5;
+}
 
+.aboutImage {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
 }

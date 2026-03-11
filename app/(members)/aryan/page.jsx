@@ -1,4 +1,8 @@
+"use client"; // Enables client-side behavior (hooks, clicks)
+
 import styles from "./page.module.scss";
+
+import { useState } from "react";
 
 const projects = [
   {
@@ -26,7 +30,9 @@ const projects = [
     description:"Developed a weather prediction model using Python in a Jupyter Notebook environment and uses streamlit to create a user-interactive frontend. The model analyzes historical weather data to forecast future conditions such as temperature/precipitation."
   }
 ]
+
 export default function AryanPage() {
+  const [projectsOpen, setProjectsOpen] = useState(false);
   return (
     <div className={styles.container}>
       <header className={styles.header}>
@@ -36,8 +42,20 @@ export default function AryanPage() {
             <li><a href="#about">About</a></li>
             <li><a href="#hobbies">Hobbies</a></li>
             <li><a href="#skills">Skills</a></li>
+            <li style={{ position: "relative", cursor: "pointer" }}
+            onMouseEnter={() => setProjectsOpen(true)}
+            onMouseLeave={() => setProjectsOpen(false)}
+            >
+            <p className="projects-btn">
+              Projects 
+            </p>
+            {projectsOpen && ( 
+            <ul>
             <li><a href="#ai-projects">AI Projects</a></li>
             <li><a href="#web-projects">Web Projects</a></li>
+            </ul>
+            )}
+            </li>
           </ul>
         </nav>
       </header>
